@@ -1,0 +1,47 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.app{
+    position: relative;
+    top: 190px;
+    text-align: center;
+}
+
+.buttongroup{
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    margin: 30px;
+    text-align: center;
+    border-color: rgb(239, 211, 175);
+    border-radius: 10px;
+    border-width: thin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(239, 211, 175);
+}
+  
+.button1:hover {
+    background-color: rgb(225, 212, 166);
+    border: none;
+    color: white;
+}
+  
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(239, 211, 175);
+}
+  
+.button2:hover {
+    background-color: rgb(222, 191, 153);
+    color: white;
+}

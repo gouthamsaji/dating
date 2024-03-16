@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #myButton {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<button id="myButton">Hover me</button>
+
+<script>
+    const button = document.querySelector("button");
+
+button.addEventListener("mouseover", () => {
+  const randomX = Math.floor(Math.random() * window.innerWidth) + "px";
+  const randomY = Math.floor(Math.random() * window.innerHeight) + "px";
+  button.style.transform = `translate(${randomX}, ${randomY})`;
+});
+
+button.addEventListener("mouseout", () => {
+  // Generate new random positions within reasonable limits
+  const maxOffset = 1000; // Adjust value for desired movement range
+  const randomX = Math.floor(Math.random() * maxOffset * 2 - maxOffset) + "px";
+  const randomY = Math.floor(Math.random() * maxOffset * 2 - maxOffset) + "px";
+  button.style.transform = `translate(${randomX}, ${randomY})`;
+});
+</script>
+
+</body>
+</html>
